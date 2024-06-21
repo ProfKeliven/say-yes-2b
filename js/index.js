@@ -11,13 +11,13 @@ function webHandler(event){
     //calculando o centro do botao
     let buttonCenter = {
         //colocando uma margem extra de 100px de largura e 40px de altura
-        x: button.left + 50,
-        y: button.top + 20
+        x: button.left + 30,
+        y: button.top + 10
     }
     //calcular a distancia entre o cursor do mouse e o centro do botao
     // Math.sqrt(x) raiz quadrada do x
     //Math.pow(base, expoent): eleva a base ao expoente expecificado
-    let distance = Math.sqrt(Math.pow(event.pageX - buttonCenter.z, 2))
+    let distance = Math.sqrt(Math.pow(event.pageX - buttonCenter.x, 2))
     //verificar se o mouse esta a menos de 80 px do botao
     if (distance < 80){
         var angle = calculateAngle (event, buttonCenter, distance)
