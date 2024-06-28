@@ -21,7 +21,7 @@ else {
 
 
 function webHandler(event){
-    let button = $("#not").position();
+    let button = $("#no").position();
     button.right = button.left + 100
     button.bottom = button.top + 28
     button.centerX = button.left + 50
