@@ -13,7 +13,7 @@ window.mobileCheck = function () {
 let mobile_states = { 1: { top: 1, left: 1 }, 2: { top: 1, left: 0 }, 3: { top: 0, left: 0 }, 4: { top: 0, left: 1 } }
 
 if (window.mobileCheck()) {
-    $("#not").mouseover(mobileHandler)
+    $("#no").mouseover(mobileHandler)
 }
 else {
     $("body").mousemove(webHandler)
